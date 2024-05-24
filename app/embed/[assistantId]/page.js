@@ -86,18 +86,6 @@ function Embed({ params: { assistantId } }) {
 
     return (
         <div className="h-screen w-screen md:p-4 flex flex-col bg-myBg gap-4">
-            <div className={`flex justify-between bg-myPrimary rounded-xl p-4`}>
-                <div className="flex items-center gap-2">
-                    <Image height={25} width={25} src='/assistant.svg' alt="logo"/>
-                    <span className="font-semibold">myAssistant</span>
-                </div>
-                <div className="d-flex align-items-center gap-2 cursor-pointer">
-                    <Image height={20} width={20} onClick={refreshChat} src='/refresh.svg'  alt="refresh"/>
-                    {/* <Image height={20} width={20} onClick={closeFrame} src='/cancel.svg'/> */}
-
-                </div>
-
-            </div>
             {keyAdded?<>
                 <div className="flex flex-col gap-2 w-full h-full overflow-y-auto scroll">
                     

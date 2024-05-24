@@ -60,7 +60,7 @@ export default function Create({params:{assistantId}}) {
             instructions: instructions,
             model:model,
             tools: tools,
-            file_ids: fileIds
+            // file_ids: fileIds
           })
         }else{
           console.log("updating")
@@ -69,7 +69,7 @@ export default function Create({params:{assistantId}}) {
             instructions: instructions,
             model:model,
             tools: tools,
-            file_ids: fileIds
+            // file_ids: fileIds
           })
         }
         setAssistant(getAssistant.id)
